@@ -1,0 +1,66 @@
+---
+title: "M02-Introduction to Data Science in R-Reflection"
+author: "Frank Renn"
+date: today
+format: 
+  html: 
+    toc: true
+    toc-depth: 4
+    number-sections: false
+    code-link: true
+    embed-resources: true
+    output-file: "index.html"
+editor: visual
+execute: 
+  freeze: auto
+---
+
+## 1. Summarize the video presentation about the reproducibility crisis (Step 1).
+
+The reproducibility crisis occurs when scientists are unable to recreate past results using the same data and code. To address this issue, the speaker recommends separating raw data, code, and results to establish a clear project structure. Other key practices include:
+
+-   Writing comprehensive `README` files
+
+-   Utilizing Git/GitHub for version control
+
+-   Automating workflows via scripts
+
+-   Applying literate coding
+
+-   Archiving projects in repositories like OSF
+
+## 1-1 Summarize the new things you learned in this module about reproducible data science and literate coding.
+
+Literate coding weaves human-readable narratives with executable code within a single document. Quarto takes this a step further by effortlessly translating complex logic into clear, readable reports. Additionally, you can use terminal commands, such as `quarto publish`, to instantly render `.qmd` files into HTML and deploy them directly to the web, ensuring that the analysis workflow is transparent and easily shareable.
+
+## 1-2 What do you think about the reproducible crisis in your field? How can Quarto help address the concerns you have about reproducibility in your line of work?
+
+In marketing data analysis, reproducibility issues often stem from lost tracking pixel logic or missing attribution rules, making predictive models impossible to replicate months later. Quarto solves this by directly integrating R, Python, or SQL code with business logic documentation. This aligns the code with the commercial strategy, ensuring that future reviews of predictive models or validation alerts are immediately understandable and reproducible.
+
+## 2. Summarize the instructor's lectures in the previous module about Quarto that you found impressive (Steps 2, 3, and 4 in this module, as well as Step 3 of the W01-Introduction to Literate Programming module). Do you see yourself using Quarto every day for your job or studies, such as taking notes in class or preparing a presentation? More eye-catching effects will be introduced in later modules.
+
+Quarto's multi-language support (R, Python, Julia) and cross-format rendering capabilities (PDF, HTML, presentations) are highly impressive. The Visual Editor makes writing Markdown incredibly intuitive. You can use Quarto daily to organize MSDM course notes and create technical marketing reports. It seamlessly combines text narratives with analytical outputs, completely replacing cumbersome LaTeX or CSS formatting.
+
+## 3. Summarize what you learned in this module about the Tidyverse ecosystem in R (Step 5). What can you do with R?
+
+Tidyverse is an R package ecosystem with a unified design philosophy. By using the pipe operator (`%>%`), reading code becomes much more fluid. Core functions include:
+
+-   **`dplyr`**: For filtering and transforming data
+
+-   **`tidyr`**: For reshaping data formats
+
+-   **`ggplot2`**: For building layered visual charts
+
+With R, you can manage the entire data pipeline: reading, cleaning, modeling, and visualizing results.
+
+## 4. Refer to the video introducing the top 20 packages. Among the various packages introduced, choose two packages beyond the Tidyverse ecosystem, base R, and Quarto that could enhance your job/career (Step 6). Tell me why you think so.
+
+The following two packages can significantly enhance workflow efficiency and career development:
+
+-   **`fable`**: Excellent for time series forecasting. Integrated with the tidy framework, it handles ARIMA models and exponential smoothing, significantly improving the accuracy of marketing and econometric revenue forecasts.
+
+-   **`reticulate`**: Bridges the gap between R and Python. It allows you to combine Python's API capabilities with R's statistical testing within a single script, perfectly optimizing MarTech data architectures.
+
+## 5. Refer to the debate on R vs. Python (Step 7). What is your take on this debate? In your response, consider how Quarto enables people using R and Python in the same team to still collaborate, as illustrated in the Video you watched in a few modules ahead: "Mine Çetinkaya-Rundel & Julia Stewart Lowndes \| Hello Quarto: Share, Collaborate, Teach, Reimagine"
+
+R and Python are complementary, not mutually exclusive. Python excels in data engineering, while R dominates in statistical modeling and visualization. Quarto completely revolutionizes team collaboration by allowing Python users to write in Jupyter Notebooks while R users write in `.qmd` files within RStudio. Quarto can render both into the same project, completely eliminating tool silos and enabling seamless teamwork.

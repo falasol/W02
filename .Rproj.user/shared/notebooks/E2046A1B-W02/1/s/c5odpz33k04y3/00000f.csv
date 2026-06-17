@@ -1,0 +1,2 @@
+"0","fit_complex <- lm(mpg ~ wt + hp + cyl, data = mtcars)"
+"0","glance(fit_complex)"

@@ -1,0 +1,2 @@
+"0","augment(fit_simple) %>% "
+"0","  head(10)"

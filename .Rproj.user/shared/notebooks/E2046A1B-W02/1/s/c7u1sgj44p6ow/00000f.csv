@@ -1,0 +1,6 @@
+"0","augment(spend_fit) %>%"
+"0","  ggplot(aes(x = .fitted, y = .resid)) +"
+"0","  geom_point(alpha = 0.3, color = ""#005030"") +"
+"0","  geom_hline(yintercept = 0, linetype = ""dashed"", color = ""#FFB81C"") +"
+"0","  labs(title = ""Residuals vs Fitted (Marketing Data)"", x = ""Fitted values"", y = ""Residuals"") +"
+"0","  theme_minimal()"

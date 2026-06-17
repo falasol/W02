@@ -1,0 +1,6 @@
+"0","spend_fit <- lm("
+"0","  monthly_spend ~ tenure + num_products + region,"
+"0","  data = customer_data"
+"0",")"
+"0",""
+"0","tidy(spend_fit)"

@@ -1,0 +1,2 @@
+"0","spend_fit_full <- lm(monthly_spend ~ tenure + num_products + region + num_complaints + last_login_days, data = customer_data)"
+"0","glance(spend_fit_full)"
